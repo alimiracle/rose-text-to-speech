@@ -26,14 +26,13 @@ def st(button2):
   os.killpg(po.pid, signal.SIGTERM)  # Send the signal to all the process groups
 
 button = Gtk.Button.new_with_label("Pley")
-button.connect("clicked", p)      # call hello_cb when clicked
+button.connect("clicked", p)
 hbox.pack_start(button, True, True, 0)
 button1 = Gtk.Button.new_with_label("Stop")
-button1.connect("clicked", st)      # call hello_cb when clicked
+button1.connect("clicked", st)
 hbox.pack_start(button1, True, True, 0)
-
 button2 = Gtk.Button.new_with_label("Exit")
-button2.connect("clicked", ex)      # call hello_cb when clicked
+button2.connect("clicked", ex)
 hbox.pack_start(button2, True, True, 0)
 window.show_all()
 Gtk.main()
