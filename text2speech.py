@@ -25,7 +25,7 @@ def ex(button1):
 def st(button2):
   os.killpg(po.pid, signal.SIGTERM)  # Send the signal to all the process groups
 
-button = Gtk.Button.new_with_label("Pley")
+button = Gtk.Button.new_with_label("Play")
 button.connect("clicked", p)
 hbox.pack_start(button, True, True, 0)
 button1 = Gtk.Button.new_with_label("Stop")
